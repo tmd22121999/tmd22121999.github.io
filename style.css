@@ -1,0 +1,145 @@
+body{
+	margin : 0 auto;
+	padding: 0 auto;
+	position:relative;
+	font-size:15px;
+}
+
+#topbar {
+	position:fixed;
+	top : 0;
+	left:0;
+	background-color : #f53d2d;
+	display : block;
+	width:100%;
+	height: 8em;
+	z-index: 2;
+}
+
+#topbar #toolbar{
+	display:block;
+	
+}
+#topbar #toolbar  .listctn {
+	margin: 0 auto;
+	padding: 10px 20px;
+	display : flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#topbar #toolbar  .listctn >li {
+	list-style:none;
+	padding: 0 5px;
+	border-right : 1px solid #999966;
+	color : white;
+	font-size:14px;
+}
+#topbar #toolbar  .listctn a {
+	color :white ;
+	text-decoration:none;
+}
+#topbar #toolbar  .listctn a:hover{
+	opacity: 0.5;
+	transition:10ms;
+}
+#topbar #toolbar  .listctn >div {
+	width:50%;
+}
+#topbar #toolbar  .listctn .listit  div {
+	display:none;
+}
+
+
+#topbar #tb #logo{
+	font-size:36px;
+	color:white;
+}
+#topbar #tb {
+	margin: 0 100px;
+	min-width: 1200px;
+	display :flex;
+	flex direction:row;
+	flex-wrap:nowrap;
+	align-items:center;
+	justify-content:flex-start	;
+}
+ #topbar #tb #textbox{
+	padding: 0 10px;
+	height: 3em;
+	width:750px;
+
+}
+
+
+#topbar #tb   #tim{
+	margin:2px -50px ;
+	height:2.6em;
+	width:3em;
+	background-color:#f53d2d ;
+	color: white;
+	border:none;
+}
+
+#topbar #tb #textbox #pkword{
+	position:relative;
+	display:flex;
+	flex-direction :row;
+	flex-wrap:nowrap;
+	min-width : 600;
+	margin:0 150px;
+}
+#topbar #pkword >a {
+	padding:0 8px;
+	color:white ;
+	opacity:0.8;
+	text-decoration:none;
+}
+
+
+#main  {
+	position:relative;
+	margin: 10em 5% ;
+	z-index:1;
+}
+
+
+#main #hlcontent{
+	background-color: white ;
+	margin:0 0;
+	padding:0 0;
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction : row;
+	justify-content:center;
+	align-items:center;
+	min-width: 1000;
+}
+
+#main  #tool a{
+	text-decoration:none;
+	color:black;
+}
+#main  #tool {
+	background-color: white ;
+	display:flex;
+	flex-wrap: nowrap;
+	flex-direction : row;
+	min-width: 1200px;
+	min-height: 6em;
+	justify-content: center;
+	align-items:center;
+}
+#main  #tool  .titem {
+	margin:0 1.25em;
+	padding: 0 0.25em;
+	text-align:center;
+}
+#main .space{
+	height:15px;
+}
+#main  #tool  .titem:hover{
+	transform:translateY(-5px);
+	transition: 0.2s;
+}
