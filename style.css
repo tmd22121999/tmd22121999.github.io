@@ -1,7 +1,6 @@
 body{
 	margin : 0 auto;
 	padding: 0 auto;
-	position:relative;
 	font-size:15px;
 }
 
@@ -12,13 +11,13 @@ body{
 	background-color : #f53d2d;
 	display : block;
 	width:100%;
+	min-width:650px;
 	height: 8em;
 	z-index: 2;
 }
 
 #topbar #toolbar{
 	display:block;
-	
 }
 #topbar #toolbar  .listctn {
 	margin: 0 auto;
@@ -29,28 +28,57 @@ body{
   justify-content: center;
   align-items: center;
 }
-#topbar #toolbar  .listctn >li {
+#topbar #toolbar  .listctn > li {
 	list-style:none;
 	padding: 0 5px;
 	border-right : 1px solid #999966;
 	color : white;
-	font-size:14px;
+	font-size:14px;;
+	position:relative;
+
 }
 #topbar #toolbar  .listctn a {
 	color :white ;
 	text-decoration:none;
 }
-#topbar #toolbar  .listctn a:hover{
+#topbar #toolbar  .listctn .listit > a:hover{
 	opacity: 0.5;
 	transition:10ms;
 }
 #topbar #toolbar  .listctn >div {
 	width:50%;
 }
-#topbar #toolbar  .listctn .listit  div {
+
+#topbar #toolbar  .listctn .listit  .ctnit {
 	display:none;
+	position:absolute;
+	background-color:white;
+
 }
 
+
+#topbar #toolbar  .listctn .listit:hover .ctnit {
+	display:block;
+}
+
+#topbar #toolbar  .listctn .listit  #noc{
+	left:-250px;
+	color:black;
+	background-color:white;
+	height:300;
+	width:350;
+}
+#topbar #toolbar  .listctn .listit #noc #logv{
+	background-color:#e6e6e6
+}
+#topbar #toolbar  .listctn .listit  #noc #logv a .nutbam:hover {
+	background-color:#b3b3b3;
+		color:#ff0000; 	
+
+}
+#topbar #toolbar  .listctn .listit  #noc #logv a .nutbam{
+	color:black;
+}
 
 #topbar #tb #logo{
 	font-size:36px;
