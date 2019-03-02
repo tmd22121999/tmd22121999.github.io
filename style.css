@@ -1,173 +1,82 @@
-body{
-	margin : 0 auto;
-	padding: 0 auto;
-	font-size:15px;
-}
-
-#topbar {
-	position:fixed;
-	top : 0;
-	left:0;
-	background-color : #f53d2d;
-	display : block;
-	width:100%;
-	min-width:650px;
-	height: 8em;
-	z-index: 2;
-}
-
-#topbar #toolbar{
-	display:block;
-}
-#topbar #toolbar  .listctn {
+*{
 	margin: 0 auto;
-	padding: 10px 20px;
-	display : flex;
+	font-size:16px;
+	padding: 0 auto;
+	box-sizing:border-box;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+#header {
+	position:fixed;
+	top:0; left:0;
+	width:100%;
+	background-color: #CCC;
+	/*min-width:600px;*/
+}
+#header #logo{
+	font-size: 200%;
+	padding: 10px 15%;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+#header #menu {
+	padding-bottom: 10px ;
+	font-size:150%;
+	margin:0 20%;
+	display:flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-#topbar #toolbar  .listctn > li {
-	list-style:none;
-	padding: 0 5px;
-	border-right : 1px solid #999966;
-	color : white;
-	font-size:14px;;
-	position:relative;
-
-}
-#topbar #toolbar  .listctn a {
-	color :white ;
+	flex-wrap:nowrap;
 	text-decoration:none;
 }
-#topbar #toolbar  .listctn .listit > a:hover{
-	opacity: 0.5;
-	transition:10ms;
-}
-#topbar #toolbar  .listctn >div {
-	width:50%;
-}
-
-#topbar #toolbar  .listctn .listit  .ctnit {
-	display:none;
-	position:absolute;
-	background-color:white;
-
-}
-
-
-#topbar #toolbar  .listctn .listit:hover .ctnit {
-	display:block;
-}
-
-#topbar #toolbar  .listctn .listit  #noc{
-	left:-250px;
-	color:black;
-	background-color:white;
-	height:300;
-	width:350;
-}
-#topbar #toolbar  .listctn .listit #noc #logv{
-	background-color:#e6e6e6
-}
-#topbar #toolbar  .listctn .listit  #noc #logv a .nutbam:hover {
-	background-color:#b3b3b3;
-		color:#ff0000; 	
-
-}
-#topbar #toolbar  .listctn .listit  #noc #logv a .nutbam{
-	color:black;
-}
-
-#topbar #tb #logo{
-	font-size:36px;
-	color:white;
-}
-#topbar #tb {
-	margin: 0 100px;
-	min-width: 1200px;
-	display :flex;
-	flex direction:row;
-	flex-wrap:nowrap;
-	align-items:center;
-	justify-content:flex-start	;
-}
- #topbar #tb #textbox{
-	padding: 0 10px;
-	height: 3em;
-	width:750px;
-
-}
-
-
-#topbar #tb   #tim{
-	margin:2px -50px ;
-	height:2.6em;
-	width:3em;
-	background-color:#f53d2d ;
-	color: white;
-	border:none;
-}
-
-#topbar #tb #textbox #pkword{
-	position:relative;
-	display:flex;
-	flex-direction :row;
-	flex-wrap:nowrap;
-	min-width : 600;
-	margin:0 150px;
-}
-#topbar #pkword >a {
-	padding:0 8px;
-	color:white ;
-	opacity:0.8;
-	text-decoration:none;
-}
-
-
-#main  {
-	position:relative;
-	margin: 10em 5% ;
-	z-index:1;
-}
-
-
-#main #hlcontent{
-	background-color: white ;
-	margin:0 0;
-	padding:0 0;
-	display:flex;
-	flex-wrap:nowrap;
-	flex-direction : row;
-	justify-content:center;
-	align-items:center;
-	min-width: 1000;
-}
-
-#main  #tool a{
-	text-decoration:none;
-	color:black;
-}
-#main  #tool {
-	background-color: white ;
-	display:flex;
-	flex-wrap: nowrap;
-	flex-direction : row;
-	min-width: 1200px;
-	min-height: 6em;
-	justify-content: center;
-	align-items:center;
-}
-#main  #tool  .titem {
-	margin:0 1.25em;
-	padding: 0 0.25em;
+#header #menu .smenu{
+	font-size:24px;
+	border: black 1px solid ;
 	text-align:center;
+	text-decoration:none;
 }
-#main .space{
-	height:15px;
+.smenu{ margin : 0 auto ;padding: 0 5rem; }
+#header #menu >a {
+	text-decoration:none;
+	color:black;
 }
-#main  #tool  .titem:hover{
-	transform:translateY(-5px);
-	transition: 0.2s;
+#header #menu .smenu:hover {
+	background-color: #003;
+	color: #6FF;
 }
+
+#main{
+	position: relative;
+	top:10em;
+	left:0px;
+	max-width:1068px;
+}
+
+#main .rand #qct  {
+	padding: 5px 10px;
+	min-height: 6em;
+	text-align: center;
+	background-color:#b3daff;
+	color:#003300;
+}
+#main .rand{ max-width: 900px; position:relative; left: 0; margin:0 auto;}
+
+#main .rand #qct #quote{	
+	padding-bottom:0.8em;
+}
+#main  .rand #qct  #charq{
+	margin-right : 20px;
+	display:flex;
+	float:right;
+}
+
+#main  .rand .butt{
+	margin-top:20px;
+	padding:10px;
+	display:flex;
+	background-color:#ff8c1a;
+	border: none;
+}
+
